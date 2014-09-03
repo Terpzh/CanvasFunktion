@@ -10,14 +10,16 @@
         var c = document.getElementById("duken");
             var ctx = c.getContext("2d")
             
-            function redCircle(){
+            function redCircle(x, y){
             ctx.fillStyle = "rgb(255, 100, 0)";
             ctx.beginPath();
-            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.arc(x,y,40,0,2*Math.PI);
             ctx.fill();
             }
             
-            redCircle();
+            redCircle(100, 200);
+            redCircle(300, 400);
+            redCircle(400, 100);
 
         </script>
     </body>
